@@ -1,0 +1,33 @@
+.Button {
+    background: #d2c7f8;
+    background: -moz-linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%);
+    background: -webkit-linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%);
+    background: linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cad2c5', endColorstr='#abb5aa',GradientType=1 );
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    height: 18%;
+    min-width: 25%;
+}
+.Button[data-size="2"] {
+    height: 45%;
+}
+
+.Button[data-value="null"] {
+    pointer-events: none;
+}
+
+.Button:hover {
+    background: #b66464;
+    cursor: pointer;
+}
+
+.Button:active {
+    background: #d2c7f8;
+}
